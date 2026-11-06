@@ -1,4 +1,8 @@
-This repository contains evaluation code accompanying the manuscript *Semantic-guided Local Feature Learning with Stability-Aware Detection for UAV Visual Localization*. The localization workflow was adapted from the AnyVisLoc benchmark of Ye et al. (2025), with additions for rotation error, joint pose success rates, and input and boundary checks. [Benchmark paper](https://arxiv.org/abs/2503.10692v1)
+# UAV Visual Localization Evaluation
+
+This repository provides evaluation code for visual localization from UAV imagery and reference maps. The localization workflow was adapted from the AnyVisLoc benchmark of Ye et al. (2025), with additions for rotation error, joint pose success rates, and input and boundary checks. [Benchmark paper](https://arxiv.org/abs/2503.10692v1)
+
+## Modules
 
 | Module | Purpose |
 | --- | --- |
@@ -10,6 +14,14 @@ This repository contains evaluation code accompanying the manuscript *Semantic-g
 | `result_io.py` | Read and write evaluation records in PKL format. |
 | `metrics.py` | Compute localization metrics. |
 
-Install the dependencies with `python -m pip install -r requirements.txt`. Call `localize_frame` with your own images, map inputs, and feature extraction functions. Use `frame_record` to prepare one record per query and `evaluate` to compute the metrics.
+## Quick start
+
+Install the dependencies.
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+Call `localize_frame` with your own images, map inputs, and feature extraction functions. Use `frame_record` to prepare one record per query and `evaluate` to compute the metrics.
 
 After the paper is published, readers may contact the authors to inquire about access to the ZJ-UAV dataset. Access requests are subject to review.
