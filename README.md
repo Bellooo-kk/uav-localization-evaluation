@@ -1,6 +1,12 @@
-# UAV Visual Localization Evaluation
+# Semantic-guided Local Feature Learning with Stability-Aware Detection for UAV Visual Localization
 
-Python tools for evaluating UAV visual localization with imagery and reference maps. The workflow builds on the AnyVisLoc benchmark, with additional rotation-error and joint pose metrics, as well as input and boundary checks. [Ye et al. (2025)](https://arxiv.org/abs/2503.10692v1)
+**Evaluation code for the accompanying manuscript**
+
+The manuscript studies how scene semantics can guide local feature learning and help identify stable image regions for UAV visual localization. This repository provides Python tools for evaluating localization with user-provided imagery and reference maps.
+
+Further information about the dataset used in this study will be provided after the paper is published.
+
+The evaluation workflow builds on the AnyVisLoc benchmark, with additional metrics for rotation error and joint pose success, as well as input and boundary checks. [Ye et al. (2025)](https://arxiv.org/abs/2503.10692v1)
 
 ## Workflow
 
