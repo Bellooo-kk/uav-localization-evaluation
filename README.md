@@ -1,8 +1,6 @@
 # Semantic-guided Local Feature Learning with Stability-Aware Detection for UAV Visual Localization
 
-**Evaluation code for the accompanying manuscript**
-
-The manuscript studies how scene semantics can guide local feature learning and help identify stable image regions for UAV visual localization. This repository provides Python tools for evaluating localization with user-provided imagery and reference maps.
+The manuscript studies how scene semantics can guide local feature learning and help identify stable image regions for UAV visual localization. This repository provides Python tools for matching UAV images to reference maps and evaluating localization results.
 
 Further information about the dataset used in this study will be provided after the paper is published.
 
@@ -24,8 +22,6 @@ Install the dependencies.
 ```bash
 python -m pip install -r requirements.txt
 ```
-
-Use your own imagery, reference-map inputs, and feature extraction functions.
 
 1. Call [`localize_frame`](pipeline.py) to estimate a pose for each query image.
 2. Use [`frame_record`](result_io.py) to pair each prediction with its reference pose.
