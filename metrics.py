@@ -30,7 +30,7 @@ def evaluate(records):
     }
     for distance in (1, 3, 5):
         metrics[f"SR@{distance}m"] = float((position <= distance).mean() * 100)
-    for threshold in (5, 7, 10):
+    for threshold in (3, 5, 7, 10):
         joint = (position <= threshold) & (rotation <= threshold)
         metrics[f"SR@({threshold}m,{threshold}deg)"] = float(joint.mean() * 100)
     return metrics
